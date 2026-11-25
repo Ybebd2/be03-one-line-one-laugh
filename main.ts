@@ -13,6 +13,8 @@ import { readFileSync } from "node:fs";
 const bounty = JSON.parse(readFileSync(new URL("./BOUNTY.json", import.meta.url), "utf8"));
 
 console.log("bounty-entrants-03 entry");
-console.log("sponsored bounty:", bounty.sponsored_bounty.title);
-console.log("slug:", bounty.sponsored_bounty.slug);
-console.log("prize pool: $" + bounty.sponsored_bounty.prize_pool_usd + " over " + bounty.sponsored_bounty.places_paid + " places, free entry");
+console.log("sponsored bounty: One Line, One Laugh");
+console.log("slug: u-4z4ghtbwm1fn7mibrqum4bxgfghhgqzriyhd8v3-one-line-0be61e5a");
+console.log("bounties:", bounty.bounties.join(", "));
+console.log("prize pool: $2 over 10 places, free entry");
+console.log("entries open until 2026-11-26T01:45:00Z; ranked by counted entrants.");
